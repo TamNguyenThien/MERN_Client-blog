@@ -11,7 +11,6 @@ export default function PostList() {
   const disPatch = useDispatch()
 
   const posts = useSelector(postState$);
-  console.log('**** cclist posts', posts);
 
   useEffect(() => {
     disPatch(actions.getPosts.getPostsRequest())
